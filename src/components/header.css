@@ -1,0 +1,12 @@
+.header {
+    margin: 50px 20px;
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.header-pic {}
