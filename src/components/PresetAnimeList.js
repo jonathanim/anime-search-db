@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import './animelist.css'
+import './presetAnimeList.css'
 
 const AnimeList = ({ anime }) => {
 
@@ -14,6 +14,7 @@ const AnimeList = ({ anime }) => {
             </div>
             <div className='card-title'>
                 <h3>{anime.title}</h3>
+                <h4>{anime.title_japanese}</h4>
             </div>
         </Link>
     )

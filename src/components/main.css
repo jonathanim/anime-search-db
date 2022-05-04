@@ -4,11 +4,14 @@
     padding: 20px;
 }
 
+.search-div {
+    justify-self: center;
+    align-self: center;
+}
+
 .top_five {
     flex: 1;
-    min-height: 100%;
     padding: 10px;
-    border: 2px solid black;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -19,13 +22,19 @@
     margin: 20px auto;
     padding: 15px;
     font-size: 1rem;
-    border: 2px solid black;
+    border: 1px solid black;
+    box-shadow: 5px 5px 30px black;
     border-radius: 5px;
     display: flex;
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
 }
 
 .anime-wrapper:hover {
     cursor: pointer;
+    transform: scale(1.05);
+
 }
 
 .anime-img {
@@ -56,5 +65,24 @@
 
 .center-main {
     display: flex;
+    flex-direction: column;
     flex: 5;
+}
+
+.anime-list {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .layout {
+        display: block;
+    }
+
+    .search-div {
+        display: block;
+    }
 }

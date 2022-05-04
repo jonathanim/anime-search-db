@@ -11,8 +11,9 @@ const Search = ({ handleSearch, search, setSearch }) => {
                     name="search"
                     value={search}
                     onChange={e => setSearch(e.target.value)}
+                    style={{ height: "70px", width: "20vw", borderRadius: "50px", textAlign: "center", fontSize: "30px", fontWeight: "bold" }}
                 />
-                <button type="submit">
+                <button type="submit" className='search-btn'>
                     SEARCH
                 </button>
             </form>

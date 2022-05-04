@@ -1,0 +1,26 @@
+.display-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.anime-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-container {
+    flex-direction: column;
+    margin-top: 50px;
+    display: flex;
+    width: 60vw;
+    border: 1px solid gray;
+    padding: 40px;
+}

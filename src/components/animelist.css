@@ -1,0 +1,40 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 20px 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .5s ease-in-out;
+    border: 2px solid black;
+    box-shadow: 5px 5px 30px black;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+
+.card-image img {
+    display: flex;
+    width: 90%;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .card {
+        display: block;
+    }
+
+}
