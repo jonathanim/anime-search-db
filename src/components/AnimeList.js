@@ -7,7 +7,7 @@ const AnimeList = ({ anime }) => {
     return (
         <Link to={`/${anime.mal_id}`} className='card' >
             <div className='card-image'>
-                <img src={`${anime.images.jpg.image_url}`} alt='' />
+                <img src={`${anime.images.jpg.image_url}`} alt={anime.title} />
                 {(!anime.episodes) ? `EP: N/A` : <p>{
                     `EP: ${anime.episodes}`
                 }</p>}

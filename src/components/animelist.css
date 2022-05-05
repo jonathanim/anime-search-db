@@ -1,14 +1,15 @@
 .card {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 350px;
     margin: 20px 15px;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     text-align: center;
     transition: .5s ease-in-out;
     border: 2px solid black;
     box-shadow: 5px 5px 30px black;
+    color: black;
 }
 
 .card:hover {
@@ -18,12 +19,15 @@
 
 
 .card-image img {
+    margin: 20px auto;
     display: flex;
-    width: 90%;
-    margin: 10px;
+    height: 300px;
     border: 2px solid black;
     border-radius: 25px;
+    object-fit: scale-down;
 }
+
+
 
 .card-title {
     display: flex;
@@ -36,5 +40,6 @@
     .card {
         display: block;
     }
+
 
 }

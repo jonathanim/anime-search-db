@@ -20,7 +20,19 @@
     flex-direction: column;
     margin-top: 50px;
     display: flex;
-    width: 60vw;
+    width: 33vw;
     border: 1px solid gray;
     padding: 40px;
+}
+
+@media screen and (max-width:600px) {
+
+    .text-container {
+        flex-direction: column;
+        margin-top: 50px;
+        display: flex;
+        width: 80vw;
+        border: 1px solid gray;
+        padding: 40px;
+    }
 }

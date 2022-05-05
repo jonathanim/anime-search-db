@@ -15,20 +15,12 @@ const Main = () => {
     const fetchTopFive = async () => {
         const temp = await fetch(`https://api.jikan.moe/v4/top/anime`)
             .then(response => response.json())
+
+        const presetList = [...temp.data].splice(5, temp.data.length - 1)
+
+        setPresetAnimeList(presetList)
         setTopFive(temp.data.slice(0, 5))
     }
-
-    const fetchPresetList = async () => {
-        const temp = await fetch(`https://api.jikan.moe/v4/top/anime`).then(
-            res => res.json()
-        )
-        setPresetAnimeList(temp.data)
-    }
-    presetAnimeList.shift()
-    presetAnimeList.shift()
-    presetAnimeList.shift()
-    presetAnimeList.shift()
-    presetAnimeList.shift()
 
 
     const fetchAnimeList = async (query) => {
@@ -46,7 +38,6 @@ const Main = () => {
 
     useEffect(() => {
         fetchTopFive()
-        fetchPresetList()
     }, [])
 
     console.log(presetAnimeList)

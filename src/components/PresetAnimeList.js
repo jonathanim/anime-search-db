@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import './presetAnimeList.css'
+import './animelist.css'
 
 const AnimeList = ({ anime }) => {
 
