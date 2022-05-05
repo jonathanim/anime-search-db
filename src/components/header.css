@@ -6,4 +6,60 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    letter-spacing: 30px;
+    transition: 1s ease-in-out;
+}
+
+.style-h1 {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    letter-spacing: 10px;
+    transition: .5s ease-in-out;
+    border: 2px solid white;
+
+}
+
+.style-db {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 15px 20px;
+    letter-spacing: -10px;
+    transition: 1s ease-in-out;
+}
+
+
+.style-h1:hover {
+    background-color: white;
+    color: black;
+    padding: 15px 20px;
+    letter-spacing: 10px;
+    cursor: crosshair;
+    border: 2px solid black;
+
+}
+
+.style-db:hover {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 20px;
+    letter-spacing: -10px;
+    cursor: crosshair;
+}
+
+
+.header:hover {
+    margin: 100px 20px;
+    text-align: center;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 25px;
 }

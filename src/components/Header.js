@@ -8,7 +8,7 @@ const Header = () => {
         <div className='header'>
             <div className="header-title">
                 <h1>
-                    Anime Mansion
+                    <span className='style-h1'>A</span>nime <span className='style-h1'>M</span>ansion  <span className='style-db'>DB</span>
                 </h1>
             </div>
         </div>
